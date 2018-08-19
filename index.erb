@@ -2,14 +2,15 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Shrikhand" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway|Shrikhand" rel="stylesheet">
   </head>
   <body>
-    <h1> Playlist </h1>
+    <h1> Songs </h1>
     <div class="songs-container">
       <% @songs.each do |song| %>
-      <ul>
-        <img src="vinyl.jpg" alt="Vinyl Photo by Adrian Korte"/>
+      <ul style="list-style-type:none">
+        <img src="../images/vinyl.jpg" alt="Vinyl Photo by Adrian Korte" height="120" width="110"/>
         <li><%= song.title %></li>
         <li><%= song.length %> seconds</li>
         <li>Play Count: <%= song.play_count %></li>
